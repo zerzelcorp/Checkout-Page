@@ -18,15 +18,23 @@ const errorMsj = document.getElementsByClassName('error')
 
 form.addEventListener("submit", (e) => {
 e.preventDefault();
-validateForm()
+if(!validateForm()){
+  e.preventDefault();
+}else{
+  form.innerHTML="Form submitted successfully!"
+  document.getElementsByClassName('flex-col-2')[0].innerHTML=""
+  
+  form.reset()
+}
+
    window.scroll({
     top:0
   })
 });
 
 function setErrorFor(element, message) {
-  const formControl = element.parentElement;
-  const errorDisplay = formControl.querySelector(".error")
+const formControl = element.parentElement;
+const errorDisplay = formControl.querySelector(".error")
 errorDisplay.innerHTML = message
 element.classList.remove('success')
 element.style.border="1px solid red"
@@ -42,6 +50,21 @@ const errorDisplay = formControl.querySelector(".error")
   element.classList.add('success')
 }
 
+const isValidName = name => {
+  const re = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/;
+  return re.test(String(name).toLowerCase());
+}
+
+const isValidEmail = email => {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+const isValidAddress = adrs => {
+  const re = /^[#.0-9a-zA-Z\s,-]+$/;
+  return re.test(String(adrs).toLowerCase());
+}
+
 function validateForm(){
 // INPUT VALUES
 let emailVal = email.value.trim();
@@ -52,12 +75,16 @@ let countryVal = country.value.trim();
 
   if (emailVal==="") {
     setErrorFor(email,"email cannot be blank")
+  }else if(!isValidEmail(emailVal)){
+    setErrorFor(email,"email is not valid")
   }else{
     setSuccessFor(email);
   }
 
-  if (nameVal === "") {
+  if (nameVal.toLowerCase === "") {
     setErrorFor(namee,"name cannot be blank")
+      }else if(!isValidName(nameVal)){
+        setErrorFor(namee,"name is not valid")
       }else {
         setSuccessFor(namee);
       }
@@ -69,10 +96,19 @@ let countryVal = country.value.trim();
         setSuccessFor(city);
       }
   
-      if (addressVal === "" ) {
+  if (addressVal === "" ) {
      setErrorFor(address,"address cannot be blank")
-      } else {
-        setSuccessFor(address);
-      } 
+    }else if(!isValidAddress(addressVal)){
+      setErrorFor(address,"address is not valid")
+    }
+     else {
+      setSuccessFor(address);
+    } 
+
+  if(emailVal==="" || nameVal==="" || addressVal==="" || cityVal===""){
+    return false
+  }else{
+    return true
+  }
 }
 

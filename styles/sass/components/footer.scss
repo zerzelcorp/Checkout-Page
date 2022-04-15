@@ -1,8 +1,9 @@
-@import './variables.scss';
+@import '../variables.scss';
 
 footer{
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    background-color: black;
     color: #f9ffff;
     padding: 1rem;
     text-align: center;

@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f9ffff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+/*# sourceMappingURL=footer.css.map */
