@@ -94,6 +94,7 @@ country.addEventListener('change',(e)=>{
 // })
 
 function validateForm() {
+  let errors = []
   if (emailVal === "") {
     setErrorFor(email,"Email have errors");
   } else {
