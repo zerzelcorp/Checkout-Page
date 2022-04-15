@@ -1,0 +1,91 @@
+@import './animations.scss';
+@import './variables.scss';
+
+form{
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    }
+    
+    .form-control{
+        display:flex;
+        flex-direction: column;
+        flex-flow: column;
+        gap: 0.8rem;
+        font-size: inherit;
+        max-width: 100%;
+        padding: 0.6rem;
+    }
+    
+    label{
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    input[type=text],
+    input[type=email]
+    {
+        font-size: 1.2rem;
+        text-align: left;
+        outline: none;
+        border: 0.1rem solid $gray;
+        color: $dark;
+        border-radius: 0.3rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.6rem;
+        transition: 250 ease-out;
+        animation: fadeInX 2s ease 1 alternate;
+    }
+    
+    input[type=number]{
+        font-size: 1.2rem;
+        text-align: left;
+        outline: none;
+        border: 0.1rem solid $gray;
+        color: $dark;
+        border-radius: 0.3rem;
+        width: 70%;
+        min-width: 50%;
+        max-width: 100%;
+        text-align: center;
+        transition: 250 ease-out;
+    
+    }
+    
+    select{
+        font-size: inherit;
+        text-align: left;
+        outline: none;
+        border: 0.1rem solid $gray;
+        color: $white;
+        border-radius: 0.3rem;
+        width: 100%;
+        padding: 0.6rem;
+        color: $dark;
+    }
+    
+    .price{
+    font-size: 1rem;
+    color: inherit;
+    text-align: left;
+    }
+    
+    .btn{
+        font-size: 1.2rem;
+        outline: none;
+        border: 0.1rem solid $gray;
+        border-radius: 0.3rem;
+        padding: 0.6rem;
+        margin: 0.4rem 0 0 0.6rem;    
+        background-color: $dark;
+        color: $white;
+        cursor: pointer;
+        transition: 250ms ease-out;
+        max-width: 100%;
+        &:hover{
+            background-color: $light;
+            border: 0.1rem solid $dark;
+            color: $dark;
+        }
+    }

@@ -1,0 +1,40 @@
+@-webkit-keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=animations.css.map */

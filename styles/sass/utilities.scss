@@ -1,0 +1,62 @@
+.d-flex{
+    display: flex;
+    gap:0.8rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.d-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.8rem;
+}
+
+.flex-col{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.8rem;
+}
+
+.flex-row{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;  
+    color: $dark;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+.text{
+    padding: 0.6rem;
+}
+
+.title-item{
+font-size: 1rem;
+text-align: left;
+}
+
+.error-msj{
+color: $white;
+background-color: $alert;
+padding: 0.5rem;
+transition: 250ms ease-out;
+}
+
+.success{
+width: inherit;
+background-color: $success;
+color: $white;
+transition: 250ms ease-out;
+}

@@ -1,0 +1,63 @@
+@import './general.scss';
+@import './variables.scss';
+@import './utilities.scss';
+@import './animations.scss';
+@import'./components/form.scss';
+
+
+//CONTENEDOR DEL MEDIO, EL QUE MUESTRA LA UI
+.row-col-2{
+height: auto;
+width: 90%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+align-items: flex-start;
+color: $dark;
+border-radius: 0.6rem;
+box-shadow: 0rem 0.2rem 0.5rem $shadow;
+margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: #f9ffff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+@media screen and(max-width:700px) {
+    .btn{
+        font-size: auto;
+        width: auto;
+    }
+
+.card-body{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flex-col-2{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+    .row-col-2{
+        display: grid;
+        grid-template-columns: 1fr 0.6fr;
+        grid-template-rows: auto;
+    }
+
+    
+input[type=number]{
+    width: 100%;
+    margin: 0.4rem;
+}
+
+}

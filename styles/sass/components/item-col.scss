@@ -1,0 +1,28 @@
+@import './variables.scss';
+@import './animations.scss';
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    }
+    
+    .flex-col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    align-self: center;
+    margin: auto;
+    }
+    
+    .item-col{
+    padding: 0.6rem;
+    max-height: 100%;
+    width: 100%;
+    border: 0.1rem solid $gray;
+    border-radius: 0.3rem;
+    animation: fadeIn 2s ease 4s 1 alternate;
+    }
+    
