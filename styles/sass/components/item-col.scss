@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './animations.scss';
+@import '../variables.scss';
+@import '../animations.scss';
 
 .card-body{
     display: flex;
@@ -26,3 +26,8 @@
     animation: fadeIn 2s ease 4s 1 alternate;
     }
     
+    .price{
+        font-size: 1rem;
+        color: inherit;
+        text-align: left;
+        }    

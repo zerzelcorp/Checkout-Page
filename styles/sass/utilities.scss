@@ -46,17 +46,3 @@
 font-size: 1rem;
 text-align: left;
 }
-
-.error-msj{
-color: $white;
-background-color: $alert;
-padding: 0.5rem;
-transition: 250ms ease-out;
-}
-
-.success{
-width: inherit;
-background-color: $success;
-color: $white;
-transition: 250ms ease-out;
-}

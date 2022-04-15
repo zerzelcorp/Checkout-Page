@@ -1,0 +1,138 @@
+@-webkit-keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  gap: 0.8rem;
+  font-size: inherit;
+  max-width: 100%;
+}
+
+label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+input[type=number] {
+  font-size: 1.2rem;
+  text-align: left;
+  outline: none;
+  border: 0.1rem solid rgba(207, 202, 202, 0.877);
+  color: black;
+  border-radius: 0.3rem;
+  width: 70%;
+  min-width: 50%;
+  max-width: 100%;
+  text-align: center;
+  -webkit-transition: 250 ease-out;
+  transition: 250 ease-out;
+}
+
+.form.control select {
+  font-size: inherit;
+  text-align: left;
+  outline: none;
+  border: 0.1rem solid rgba(207, 202, 202, 0.877);
+  color: #f9ffff;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.6rem;
+  color: black;
+}
+
+.form.control input {
+  font-size: 1.2rem;
+  text-align: left;
+  outline: none;
+  border: 0.1rem solid rgba(207, 202, 202, 0.877);
+  color: black;
+  border-radius: 0.3rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.6rem;
+  -webkit-transition: 250 ease-out;
+  transition: 250 ease-out;
+  -webkit-animation: fadeInX 2s ease 1 alternate;
+          animation: fadeInX 2s ease 1 alternate;
+}
+
+.form.control.success input {
+  border: 0.1rem solid #49e573;
+}
+
+.form.control.error input {
+  border: 0.1rem solid #ff2a20;
+}
+
+.btn {
+  font-size: 1.2rem;
+  outline: none;
+  border: 0.1rem solid rgba(207, 202, 202, 0.877);
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+  margin: 0.4rem 0 0 0.6rem;
+  background-color: black;
+  color: #f9ffff;
+  cursor: pointer;
+  -webkit-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+  max-width: 100%;
+}
+
+.btn:hover {
+  background-color: #ccd8c4;
+  border: 0.1rem solid black;
+  color: black;
+}
+/*# sourceMappingURL=form.css.map */

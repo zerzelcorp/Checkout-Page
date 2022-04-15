@@ -1,0 +1,84 @@
+@-webkit-keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    width: 5%;
+    opacity: 0.3;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.flex-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: auto;
+}
+
+.item-col {
+  padding: 0.6rem;
+  max-height: 100%;
+  width: 100%;
+  border: 0.1rem solid rgba(207, 202, 202, 0.877);
+  border-radius: 0.3rem;
+  -webkit-animation: fadeIn 2s ease 4s 1 alternate;
+          animation: fadeIn 2s ease 4s 1 alternate;
+}
+
+.price {
+  font-size: 1rem;
+  color: inherit;
+  text-align: left;
+}
+/*# sourceMappingURL=item-col.css.map */
